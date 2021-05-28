@@ -1,0 +1,107 @@
+.body-topic{
+    font-family: Circular Std;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.body-topic:first-child{
+    color: #3F3E3E;
+    line-height: 22.77px;
+    font-size: 18px;
+}
+.body-topic:last-child{
+    color: #989898;
+    line-height: 17.71px;
+    font-size: 14px;
+}
+.body-card{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 345px); */
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 8%);
+    border-radius: 2px;
+    padding: 19px 15px 0px;
+    text-align: left;
+    position: relative;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+.card p:first-child{
+    font-family: Circular Std;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 5px;
+
+}
+.card p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 5px;
+    margin-bottom: 60px;
+
+}
+
+.card p:last-child{
+    font-family: Circular Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #08BD37;
+    background: #F9F9F9;
+    /* margin: 0px -15px 0px; */
+    padding: 13px;
+
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    right: 0;
+}
+a{ 
+    text-decoration: none;
+    color: inherit;
+}
+
+.page{
+    border: 1px solid #3F3F3F;
+    border-radius: 3px;
+    padding: 2px 7px;
+}
+
+.body-footer{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.body-footer span{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .body-card{ grid-template-columns: auto auto auto; }
+}
+@media only screen and (max-width: 850px) {
+    .body-card{ grid-template-columns: auto auto; }
+}
+
+@media only screen and (max-width: 450px) {
+    .body-card{ grid-template-columns: auto;  justify-content:center;}
+}

@@ -1,0 +1,100 @@
+
+.icon-search svg{
+    display: inline-block;
+    line-height: 24px;
+    position: relative;
+}
+
+.icon-search {
+    position: absolute;
+    top: 13px;
+    right: 3%;
+    z-index: 2;
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 2.6rem .375rem  .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 0;
+    font-family: inherit;
+
+ }
+
+ label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-group{
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+}
+.form-inline{
+    display: inline-block;
+    vertical-align: middle;
+}
+nav span label{
+    position: absolute;
+    align-items: center;
+    color: #8F8B8B;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    left: 31px;
+    top: -12px;
+    background: #fff;
+    padding: 0px 3px;
+}
+nav span { position: relative; }
+
+nav select{
+    display: inline-block !important;
+    width: auto !important;
+    vertical-align: middle;
+    margin-left: 10px !important;
+}
+
+nav,.body-topic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 918.5px) {
+    nav .form-group{
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+
+    nav{ justify-content:center; }
+
+    .form-inline { display: contents; }
+
+    nav span label{ top:-5px; }
+
+    nav span { margin-bottom: 10px;}
+}
